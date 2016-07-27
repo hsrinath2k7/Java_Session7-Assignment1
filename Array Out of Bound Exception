@@ -1,0 +1,38 @@
+package Session7;
+
+public class ArrayHandling {
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int[] arr = new int [5];
+		
+		arr[0] = 11;
+		arr[1] = 12;
+		arr[2] = 13;
+		arr[3] = 14;
+		arr[4] = 15;
+		
+		try
+		{
+		
+		System.out.println("Arr Value: " + arr[7] );
+		
+		} catch (ArrayIndexOutOfBoundsException e)
+		{
+			System.out.println("Array Index error: " + e);
+		}
+
+	}
+
+}
+
+
+
+/* Ouput
+
+Array Index error: java.lang.ArrayIndexOutOfBoundsException: 7
+
+
+*/
